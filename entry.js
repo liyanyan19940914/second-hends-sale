@@ -1,3 +1,17 @@
 require("./style.css");
-document.write("It works.");
+import React, {Component} from 'react';
+import {render} from "react-dom";
+
+
+class HelloMessage extends Component {
+    render() {
+        return (
+            <div>Hello</div>
+        )
+    }
+}
+render(<HelloMessage />, document.getElementById('app'));
+
+
+
 
